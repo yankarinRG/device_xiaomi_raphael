@@ -25,8 +25,8 @@ allow xiaomi_settings hal_displayfeature_xiaomi_hwservice:hwservice_manager find
 allow xiaomi_settings hal_motor_hwservice_xiaomi:hwservice_manager find;
 get_prop(xiaomi_settings, persist_camera_prop)
 
-# Allow binder communication with hal_displayfeature_xiaomi_default
-binder_call(xiaomi_settings, hal_displayfeature_xiaomi_default)
+# Allow binder communication with hal_displayfeature_xiaomi
+binder_call(xiaomi_settings, hal_displayfeature_xiaomi)
 
 # Allow binder communication with hal_lineage_camera_motor_default
 binder_call(xiaomi_settings, hal_lineage_camera_motor_default)

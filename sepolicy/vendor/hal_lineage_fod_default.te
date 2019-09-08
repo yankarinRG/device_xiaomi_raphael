@@ -8,8 +8,8 @@ allow hal_lineage_fod_default hal_fingerprint_hwservice_xiaomi:hwservice_manager
 
 binder_call(hal_lineage_fod_default, hal_fingerprint_default)
 
-# Allow binder communication with hal_displayfeature_xiaomi_default
-binder_call(hal_lineage_fod_default, hal_displayfeature_xiaomi_default)
+# Allow binder communication with hal_displayfeature_xiaomi
+binder_call(hal_lineage_fod_default, hal_displayfeature_xiaomi)
 
 # Allow hal_lineage_fod_default to find hal_displayfeature_xiaomi_hwservice
 allow hal_lineage_fod_default hal_displayfeature_xiaomi_hwservice:hwservice_manager find;
