@@ -7,3 +7,12 @@ allow hal_lineage_fod_default sysfs_graphics:file rw_file_perms;
 allow hal_lineage_fod_default hal_fingerprint_hwservice_xiaomi:hwservice_manager find;
 
 binder_call(hal_lineage_fod_default, hal_fingerprint_default)
+
+# Allow binder communication with hal_displayfeature_xiaomi_default
+binder_call(hal_lineage_fod_default, hal_displayfeature_xiaomi_default)
+
+# Allow hal_lineage_fod_default to find hal_displayfeature_xiaomi_hwservice
+allow hal_lineage_fod_default hal_displayfeature_xiaomi_hwservice:hwservice_manager find;
+
+# Allow to use wakelock
+wakelock_use(hal_lineage_fod_default)
