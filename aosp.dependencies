@@ -1,11 +1,15 @@
 [
    {
-      "repository":"vendor_xiaomi",
-      "target_path":"vendor/xiaomi"
+      "remote":"github",
+      "repository":"PixelExperience-Devices/vendor_xiaomi",
+      "target_path":"vendor/xiaomi",
+      "branch":"ten"
    },
    {
-      "repository":"kernel_xiaomi_raphael",
-      "target_path":"kernel/xiaomi/raphael"
+      "remote":"github",
+      "repository":"PixelExperience-Devices/kernel_xiaomi_raphael",
+      "target_path":"kernel/xiaomi/raphael",
+      "branch":"ten" 
    },
    {
       "repository":"packages_apps_PixelLiveWallpaper",
@@ -14,7 +18,8 @@
       "remote":"pixel-gitlab"
    },
    {
-      "repository":"vendor_MiuiCamera",
+      "remote":"github",
+      "repository":"PixelExperience-Devices/vendor_MiuiCamera",
       "target_path":"vendor/MiuiCamera",
       "branch":"ten-anx-48mp"
    },
